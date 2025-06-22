@@ -1,0 +1,187 @@
+import { Link } from "react-router-dom";
+import NewsLetter from "./components/NewsLetter";
+
+function Footer() {
+  return (
+    <>
+      <section className="relative flex flex-col items-center justify-center w-screen mt-45 bg-gray-light min-h-auto sm:border-t-2 sm:border-black/100 ">
+        <div className="flex flex-col items-center justify-center w-[90vw] h-auto max-w-[77.5rem]">
+
+         <NewsLetter/>
+
+
+          {/* bottom nav */}
+          <div className="flex items-end w-full justify-end h-[670px] border-b  border-black/20  md:h-[500px]  ">
+            <div className="flex flex-col justify-between items-center h-[500px] w-full md:h-[400px] md:flex-row ">
+              <div className="flex flex-col justify-around item-start h-[180px]  w-full md:w-1/4   md:h-[180px] md:translate-y-[50px]">
+                <Link to="/" className="w-full h-1/4 flex-col items-center justify-center text-center">
+                   <img
+                  src="/src/assets/Images/Icons/SHOP.CO.png"
+                  alt=""
+                  className="h-[20px] w-[145px] object-contain ml-[-10px]"
+                />
+          </Link>
+               
+                <p className="text-sm text-black/60 font-secondary leading-[20px]  ">
+                  We have clothes that suits your style and which you're proud
+                  to wear. From women to men.
+                </p>
+                <div className="flex w-full gap-3">
+                  <img
+                    src="/src/assets/Images/Icons/twitter.png"
+                    alt=""
+                    className="hover:invert"
+                  />
+                  <img
+                    src="/src/assets/Images/Icons/facebook.png"
+                    alt=""
+                    className="invert hover:invert-0"
+                  />
+                  <img
+                    src="/src/assets/Images/Icons/insta.png"
+                    alt=""
+                    className=" hover:invert"
+                  />
+                  <img
+                    src="/src/assets/Images/Icons/github.png"
+                    alt=""
+                    className="hover:invert"
+                  />
+                </div>
+              </div>
+              <div className="flex flex-wrap justify-center w-full h-full item-start md:w-3/4 md:flex-row md:flex-nowrap md:h-[280px] md:items-end md:justify-end">
+                <div className="flex flex-col items-start justify-between w-1/2 text-sm text-black h-4/10 font-secondary/60md:items-end md:h-[180px]">
+                  <ul className="flex flex-col justify-between h-full ">
+                    <li className="text-sm text-black/60 leading-[18px]  font-semibold font-secondary uppercase tracking-[3px]">
+                      Company
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      About{" "}
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Features
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      {" "}
+                      Works
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      {" "}
+                      Career
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col items-start justify-between w-1/2 text-sm text-black h-4/10 font-secondary/60md:items-end md:h-[180px]">
+                  <ul className="flex flex-col justify-between h-full ">
+                    <li className="text-sm text-black/60 leading-[18px] font-secondary  font-semibold uppercase tracking-[3px]">
+                      HELP
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Customer Support
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Delivery Details
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      {" "}
+                      Terms & Conditions
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      {" "}
+                      Privacy Policy
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col items-start justify-between w-1/2 text-sm text-black h-4/10 font-secondary/60md:items-end md:h-[180px]">
+                  <ul className="flex flex-col justify-between h-full ">
+                    <li className="text-sm text-black/60 leading-[18px] font-secondary  font-semibold uppercase tracking-[3px]">
+                      FAQ
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Account
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Manage Deliveries
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Orders
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Payment
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col items-start justify-between w-1/2 text-sm text-black h-4/10 font-secondary/60md:items-end md:h-[180px]">
+                  <ul className="flex flex-col md:items-center justify-between h-full ">
+                    <li className="text-sm text-black/60 leading-[18px] font-secondary font-semibold uppercase tracking-[3px] ">
+                      {" "}
+                      RESOURCES
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Free eBook
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      {" "}
+                      Development Tutorial{" "}
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      {" "}
+                      How to Blog
+                    </li>
+                    <li className="text-sm text-black/60 leading-[16px] font-secondary ">
+                      Youtube Playlist
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    
+          {/* footer bottom */}
+          <div className="flex flex-col items-center w-full justify-center gap-3 h-[135px]  text-sm text-black/60 w-font-secondary md:flex-row md:justify-between">
+            <p>
+              Shop.co © 2025 , Coded by
+              <a
+                href="https://startbootstrap-personal.vercel.app/"
+                className="font-bold hover:underline hover:text-black/80 in-hover:translate-x-[10px] ml-1"
+              >
+                 Olajire Joel
+              </a>
+              .
+            </p>
+            <div className="flex items-center justify-center">
+              <img
+                src="/src/assets/Images/Icons/visa.png"
+                alt=""
+                className="w-1/6"
+              />
+              <img
+                src="/src/assets/Images/Icons/mastercard.png"
+                alt=""
+                className="w-1/6"
+              />
+              <img
+                src="/src/assets/Images/Icons/paypal.png"
+                alt=""
+                className="w-1/6"
+              />
+              <img
+                src="/src/assets/Images/Icons/apple-pay.png"
+                alt=""
+                className="w-1/6"
+              />
+              <img
+                src="/src/assets/Images/Icons/google-pay.png"
+                alt=""
+                className="w-1/6"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default Footer;

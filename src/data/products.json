@@ -1,0 +1,429 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Air Max 270",
+      "imageUrl": "https://example.com/nike-air-max-270.jpg",
+      "rating": 4.5,
+      "price": {
+        "old": 12000,
+        "new": 9000
+      },
+      "discount": 25,
+      "description": "Nike Air Max 270 shoes are designed for comfort and style. They feature a full-length Max Air unit for maximum comfort and a sleek design.",
+      "colors": ["Black", "White", "Red", "Blue"],
+      "sizes": ["US 8", "US 9", "US 10", "US 11"],
+      "thumbnails": [
+        "https://example.com/nike-air-max-270-thumb1.jpg",
+        "https://example.com/nike-air-max-270-thumb2.jpg",
+        "https://example.com/nike-air-max-270-thumb3.jpg"
+      ],
+      "keywords": ["Nike", "Shoes", "Sneakers"],
+      "category": "Shoes"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Superstar",
+      "imageUrl": "https://example.com/adidas-superstar.jpg",
+      "rating": 4.2,
+      "price": {
+        "old": 8000,
+        "new": 6000
+      },
+      "discount": 25,
+      "description": "Adidas Superstar shoes are classic shell-toe sneakers that are perfect for casual wear.",
+      "colors": ["Black", "White", "Green", "Yellow"],
+      "sizes": ["US 7", "US 8", "US 9", "US 10"],
+      "thumbnails": [
+        "https://example.com/adidas-superstar-thumb1.jpg",
+        "https://example.com/adidas-superstar-thumb2.jpg",
+        "https://example.com/adidas-superstar-thumb3.jpg"
+      ],
+      "keywords": ["Adidas", "Shoes", "Sneakers"],
+      "category": "Shoes"
+    },
+    {
+      "id": 3,
+      "name": "Levi's 511 Jeans",
+      "imageUrl": "https://example.com/levis-511-jeans.jpg",
+      "rating": 4.8,
+      "price": {
+        "old": 6000,
+        "new": 5000
+      },
+      "discount": 17,
+      "description": "Levi's 511 jeans are slim-fit jeans that are perfect for everyday wear.",
+      "colors": ["Blue", "Black", "Grey", "Beige"],
+      "sizes": ["28", "30", "32", "34"],
+      "thumbnails": [
+        "https://example.com/levis-511-jeans-thumb1.jpg",
+        "https://example.com/levis-511-jeans-thumb2.jpg",
+        "https://example.com/levis-511-jeans-thumb3.jpg"
+      ],
+      "keywords": ["Levi's", "Jeans", "Clothing"],
+      "category": "Clothing"
+    },
+    {
+      "id": 4,
+      "name": "Apple Watch Series 7",
+      "imageUrl": "https://example.com/apple-watch-series-7.jpg",
+      "rating": 4.9,
+      "price": {
+        "old": 40000,
+        "new": 35000
+      },
+      "discount": 13,
+      "description": "Apple Watch Series 7 is a stylish and functional smartwatch that tracks your fitness and health.",
+      "colors": ["Space Gray", "Gold", "Silver", "Blue"],
+      "sizes": ["40mm", "44mm"],
+      "thumbnails": [
+        "https://example.com/apple-watch-series-7-thumb1.jpg",
+        "https://example.com/apple-watch-series-7-thumb2.jpg",
+        "https://example.com/apple-watch-series-7-thumb3.jpg"
+      ],
+      "keywords": ["Apple", "Watch", "Smartwatch"],
+      "category": "Electronics"
+    },
+    {
+      "id": 5,
+      "name": "Samsung Galaxy S22",
+      "imageUrl": "https://example.com/samsung-galaxy-s22.jpg",
+      "rating": 4.7,
+      "price": {
+        "old": 80000,
+        "new": 70000
+      },
+      "discount": 13,
+      "description": "Samsung Galaxy S22 is a powerful and feature-rich smartphone with a stunning display.",
+      "colors": ["Phantom Black", "Phantom Silver", "Green", "Pink"],
+      "sizes": ["128GB", "256GB", "512GB"],
+      "thumbnails": [
+        "https://example.com/samsung-galaxy-s22-thumb1.jpg",
+        "https://example.com/samsung-galaxy-s22-thumb2.jpg",
+        "https://example.com/samsung-galaxy-s22-thumb3.jpg"
+      ],
+      "keywords": ["Samsung", "Galaxy", "Smartphone"],
+      "category": "Electronics"
+    },
+    {
+      "id": 6,
+      "name": "Nike Air Force 1",
+      "imageUrl": "https://example.com/nike-air-force-1.jpg",
+      "rating": 4.4,
+      "price": {
+        "old": 10000,
+        "new": 8000
+      },
+      "discount": 20,
+      "description": "Nike Air Force 1 shoes are classic basketball shoes that are perfect for casual wear.",
+      "colors": ["Black", "White", "Red", "Blue"],
+      "sizes": ["US 8", "US 9", "US 10", "US 11"],
+      "thumbnails": [
+        "https://example.com/nike-air-force-1-thumb1.jpg",
+        "https://example.com/nike-air-force-1-thumb2.jpg",
+        "https://example.com/nike-air-force-1-thumb3.jpg"
+      ],
+      "keywords": ["Nike", "Shoes", "Sneakers"],
+      "category": "Shoes"
+    },
+    {
+      "id": 7,
+      "name": "Canon EOS 80D",
+      "imageUrl": "https://example.com/canon-eos-80d.jpg",
+      "rating": 4.6,
+      "price": {
+        "old": 100000,
+        "new": 90000
+      },
+      "discount": 10,
+      "description": "Canon EOS 80D is a powerful DSLR camera that is perfect for photography enthusiasts.",
+      "colors": ["Black"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/canon-eos-80d-thumb1.jpg",
+        "https://example.com/canon-eos-80d-thumb2.jpg",
+        "https://example.com/canon-eos-80d-thumb3.jpg"
+      ],
+      "keywords": ["Canon", "Camera", "DSLR"],
+      "category": "Electronics"
+    },
+    {
+      "id": 8,
+      "name": "Sony Wireless Headphones",
+      "imageUrl": "https://example.com/sony-wireless-headphones.jpg",
+      "rating": 4.8,
+      "price": {
+        "old": 20000,
+        "new": 15000
+      },
+      "discount": 25,
+      "description": "Sony wireless headphones are perfect for music lovers who want to enjoy their favorite tunes without wires.",
+      "colors": ["Black", "Blue", "Red", "White"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/sony-wireless-headphones-thumb1.jpg",
+        "https://example.com/sony-wireless-headphones-thumb2.jpg",
+        "https://example.com/sony-wireless-headphones-thumb3.jpg"
+      ],
+      "keywords": ["Sony", "Headphones", "Wireless"],
+      "category": "Electronics"
+    },
+    {
+      "id": 9,
+      "name": "Gucci Handbag",
+      "imageUrl": "https://example.com/gucci-handbag.jpg",
+      "rating": 4.9,
+      "price": {
+        "old": 100000,
+        "new": 80000
+      },
+      "discount": 20,
+      "description": "Gucci handbag is a stylish and luxurious accessory that is perfect for fashion enthusiasts.",
+      "colors": ["Black", "Brown", "Red", "Beige"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/gucci-handbag-thumb1.jpg",
+        "https://example.com/gucci-handbag-thumb2.jpg",
+        "https://example.com/gucci-handbag-thumb3.jpg"
+      ],
+      "keywords": ["Gucci", "Handbag", "Luxury"],
+      "category": "Fashion"
+    },
+    {
+      "id": 10,
+      "name": "Ray-Ban Sunglasses",
+      "imageUrl": "https://example.com/ray-ban-sunglasses.jpg",
+      "rating": 4.7,
+      "price": {
+        "old": 15000,
+        "new": 12000
+      },
+      "discount": 20,
+      "description": "Ray-Ban sunglasses are stylish and protective eyewear that is perfect for outdoor enthusiasts.",
+      "colors": ["Black", "Brown", "Silver", "Gold"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/ray-ban-sunglasses-thumb1.jpg",
+        "https://example.com/ray-ban-sunglasses-thumb2.jpg",
+        "https://example.com/ray-ban-sunglasses-thumb3.jpg"
+      ],
+      "keywords": ["Ray-Ban", "Sunglasses", "Eyewear"],
+      "category": "Fashion"
+    },
+    {
+      "id": 11,
+      "name": "PlayStation 5",
+      "imageUrl": "https://example.com/playstation-5.jpg",
+      "rating": 4.9,
+      "price": {
+        "old": 50000,
+        "new": 45000
+      },
+      "discount": 10,
+      "description": "PlayStation 5 is a powerful gaming console that is perfect for gamers.",
+      "colors": ["White"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/playstation-5-thumb1.jpg",
+        "https://example.com/playstation-5-thumb2.jpg",
+        "https://example.com/playstation-5-thumb3.jpg"
+      ],
+      "keywords": ["PlayStation", "Gaming", "Console"],
+      "category": "Electronics"
+    },
+    {
+      "id": 12,
+      "name": "Xbox Controller",
+      "imageUrl": "https://example.com/xbox-controller.jpg",
+      "rating": 4.6,
+      "price": {
+        "old": 6000,
+        "new": 5000
+      },
+      "discount": 17,
+      "description": "Xbox controller is a wireless gaming controller that is perfect for gamers.",
+      "colors": ["Black", "White"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/xbox-controller-thumb1.jpg",
+        "https://example.com/xbox-controller-thumb2.jpg",
+        "https://example.com/xbox-controller-thumb3.jpg"
+      ],
+      "keywords": ["Xbox", "Controller", "Gaming"],
+      "category": "Electronics"
+    },
+    {
+      "id": 13,
+      "name": "Nintendo Switch",
+      "imageUrl": "https://example.com/nintendo-switch.jpg",
+      "rating": 4.8,
+      "price": {
+        "old": 30000,
+        "new": 25000
+      },
+      "discount": 17,
+      "description": "Nintendo Switch is a hybrid gaming console that is perfect for gamers.",
+      "colors": ["Gray", "Neon Red", "Neon Blue"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/nintendo-switch-thumb1.jpg",
+        "https://example.com/nintendo-switch-thumb2.jpg",
+        "https://example.com/nintendo-switch-thumb3.jpg"
+      ],
+      "keywords": ["Nintendo", "Switch", "Gaming"],
+      "category": "Electronics"
+    },
+    {
+      "id": 14,
+      "name": "Samsung 4K TV",
+      "imageUrl": "https://example.com/samsung-4k-tv.jpg",
+      "rating": 4.9,
+      "price": {
+        "old": 100000,
+        "new": 90000
+      },
+      "discount": 10,
+      "description": "Samsung 4K TV is a high-definition television that is perfect for home entertainment.",
+      "colors": ["Black"],
+      "sizes": ["55inch", "65inch", "75inch"],
+      "thumbnails": [
+        "https://example.com/samsung-4k-tv-thumb1.jpg",
+        "https://example.com/samsung-4k-tv-thumb2.jpg",
+        "https://example.com/samsung-4k-tv-thumb3.jpg"
+      ],
+      "keywords": ["Samsung", "TV", "4K"],
+      "category": "Electronics"
+    },
+    {
+      "id": 15,
+      "name": "LG Soundbar",
+      "imageUrl": "https://example.com/lg-soundbar.jpg",
+      "rating": 4.7,
+      "price": {
+        "old": 20000,
+        "new": 15000
+      },
+      "discount": 25,
+      "description": "LG soundbar is a high-quality audio system that is perfect for home entertainment.",
+      "colors": ["Black"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/lg-soundbar-thumb1.jpg",
+        "https://example.com/lg-soundbar-thumb2.jpg",
+        "https://example.com/lg-soundbar-thumb3.jpg"
+      ],
+      "keywords": ["LG", "Soundbar", "Audio"],
+      "category": "Electronics"
+    },
+    {
+      "id": 16,
+      "name": "Apple MacBook Air",
+      "imageUrl": "https://example.com/apple-macbook-air.jpg",
+      "rating": 4.9,
+      "price": {
+        "old": 100000,
+        "new": 90000
+      },
+      "discount": 10,
+      "description": "Apple MacBook Air is a powerful and portable laptop that is perfect for productivity.",
+      "colors": ["Space Gray", "Gold", "Silver"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/apple-macbook-air-thumb1.jpg",
+        "https://example.com/apple-macbook-air-thumb2.jpg",
+        "https://example.com/apple-macbook-air-thumb3.jpg"
+      ],
+      "keywords": ["Apple", "MacBook", "Laptop"],
+      "category": "Electronics"
+    },
+    {
+      "id": 17,
+      "name": "Dell Inspiron Laptop",
+      "imageUrl": "https://example.com/dell-inspiron-laptop.jpg",
+      "rating": 4.5,
+      "price": {
+        "old": 50000,
+        "new": 40000
+      },
+      "discount": 20,
+      "description": "Dell Inspiron laptop is a powerful and affordable laptop that is perfect for everyday use.",
+      "colors": ["Black", "Silver"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/dell-inspiron-laptop-thumb1.jpg",
+        "https://example.com/dell-inspiron-laptop-thumb2.jpg",
+        "https://example.com/dell-inspiron-laptop-thumb3.jpg"
+      ],
+      "keywords": ["Dell", "Inspiron", "Laptop"],
+      "category": "Electronics"
+    },
+    {
+      "id": 18,
+      "name": "HP Printer",
+      "imageUrl": "https://example.com/hp-printer.jpg",
+      "rating": 4.4,
+      "price": {
+        "old": 10000,
+        "new": 8000
+      },
+      "discount": 20,
+      "description": "HP printer is a reliable and efficient printer that is perfect for home and office use.",
+      "colors": ["White", "Black"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/hp-printer-thumb1.jpg",
+        "https://example.com/hp-printer-thumb2.jpg",
+        "https://example.com/hp-printer-thumb3.jpg"
+      ],
+      "keywords": ["HP", "Printer", "Office"],
+      "category": "Electronics"
+    },
+    {
+      "id": 19,
+      "name": "Canon Camera Lens",
+      "imageUrl": "https://example.com/canon-camera-lens.jpg",
+      "rating": 4.8,
+      "price": {
+        "old": 20000,
+        "new": 15000
+      },
+      "discount": 25,
+      "description": "Canon camera lens is a high-quality lens that is perfect for photography enthusiasts.",
+      "colors": ["Black"],
+      "sizes": [],
+      "thumbnails": [
+        "https://example.com/canon-camera-lens-thumb1.jpg",
+        "https://example.com/canon-camera-lens-thumb2.jpg",
+        "https://example.com/canon-camera-lens-thumb3.jpg"
+      ],
+      "keywords": ["Canon", "Lens", "Camera"],
+      "category": "Electronics"
+    },
+    {
+      "id": 20,
+      "name": "Sony Wireless Earbuds",
+      "imageUrl": "https://example.com/sony-wireless-earbuds.jpg",
+      "rating": 4.9,
+      "price": {
+        "old": 15000,
+        "new": 12000
+      },
+      "discount": 20,
+      "description": "Sony wireless earbuds are perfect for music lovers who want to enjoy their favorite tunes without wires.",
+      "colors": ["Black", "White", "Blue"],
+      "sizes": [],
+     
+      "thumbnails": [
+        "https://example.com/sony-wireless-earbuds-thumb1.jpg",
+        "https://example.com/sony-wireless-earbuds-thumb2.jpg",
+        "https://example.com/sony-wireless-earbuds-thumb3.jpg"
+      ],
+      "keywords": ["Sony", "Wireless", "Earbuds"],
+      "category": "Electronics"
+    }
+  ]
+}
+
+
+
+
