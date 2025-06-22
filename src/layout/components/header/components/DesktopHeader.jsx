@@ -15,7 +15,7 @@ function DesktopHeader() {
         <div className="flex items-center w-full  h-[50px] justify-between ">
           <Link to="/">
                <img
-            src="/src/assets/Images/icons/SHOP.CO.png"
+            src="/images/icons/SHOP.CO.png"
             alt="Logo"
             className="object-contain h-[22px] cursor-pointer w-[160px] mr-1"
           />
@@ -27,7 +27,7 @@ function DesktopHeader() {
                 <Link to="/product"     className="relative flex items-center justify-between  gap-5 text-black hover:text-gray-900 active:decoration-2-underline text-[13px] lg:text-[16px]">   
                  <span className="flex items-center gap-1">Shop
                   <img
-                    src="/src/assets/Images/Icons/arrow-down.png"
+                    src="/images/Icons/arrow-down.png"
                     alt=""
                     onClick={toggleShopMenu}
                     className={`object-contain h-[10px] cursor-pointer w-[10px] ${
@@ -92,10 +92,10 @@ function DesktopHeader() {
                 type="text"
                 className="w-full h-full px-2 py-4 text-black border-none rounded-full indent-[50px] bg-black/10 focus:outline-none md:h-[8/10]"
                 placeholder="        Search for products..."
-                // value={searchItem}
+                onChange={(e) => setSearchItem(e.target.value)} value={searchItem}
               />
               <img
-                src="/src/assets/Images/icons/search-lg.png"
+                src="/images/icons/search-lg.png"
                 alt=""
                 className="absolute top-[50%] left-10 translate-y-[-50%]"
               />
@@ -103,14 +103,14 @@ function DesktopHeader() {
             <div className="flex items-center justify-between xl:justify-around w-4/30">
               <Link to="/cart">
                 <img
-                src="/src/assets/Images/Icons/cart.png"
+                src="/images/Icons/cart.png"
                 alt=""
                 className="object-contain h-7 w-7  md:w-5 md:h-7"
               />
               </Link>
               
               <img
-                src="/src/assets/Images/Icons/user.png"
+                src="/images/Icons/user.png"
                 alt=""
                 className="object-contain h-7 w-7 cursor-pointer  md:w-5 md:h-7"
               />

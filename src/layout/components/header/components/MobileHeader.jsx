@@ -16,7 +16,7 @@ function MobileHeader() {
 
 
   return (
-    <header className=" h-[65px] w-[91%]  flex items-center md:hidden justify-center border-b-1 border-black/10
+    <header className=" h-[65px] w-[91%]  flex items-center  justify-center border-b-1 border-black/10
       ">
       {/* Mobile layout */}
       <div className="relative h-[24px] flex items-center justify-center w-full md:hidden">
@@ -25,14 +25,14 @@ function MobileHeader() {
           onClick={toggleMobileMenu}
         >
           <img
-            src="/src/assets/Images/Icons/hamburger.png"
+            src="images/Icons/hamburger.png"
             alt=""
             className=""
           />
         </button>
         <Link to="/" className="flex items-center justify-center w-full">
           <img
-          src="/src/assets/Images/Icons/SHOP.CO.png"
+          src="/images/Icons/SHOP.CO.png"
           alt=""
           className="absolute cursor-pointer left-[10%]"
         />
@@ -40,21 +40,21 @@ function MobileHeader() {
         
         <div className="absolute right-0 flex items-center justify-between w-1/4">
           <img
-            src="/src/assets/Images/Icons/search.png"
+            src="/images/Icons/search.png"
             alt=""
             className="cursor-pointer"
           />
           <Link to="/cart">
             
              <img
-            src="/src/assets/Images/Icons/cart.png"
+            src="/images/Icons/cart.png"
             alt=""
             className="cursor-pointer"
           />
           </Link>
          
           <img
-            src="/src/assets/Images/Icons/user.png"
+            src="/images/Icons/user.png"
             alt=""
             className="cursor-pointer"
           />

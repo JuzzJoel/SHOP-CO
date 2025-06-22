@@ -39,7 +39,7 @@ Zorb Flux Drek Rize Kaid Brio Lime Taze Nerd Fizz
           </div>
           <div className="relative w-full  h-1/2 md:w-1/2 md:h-full ">
             <img src="/images/vectors/Vector.png" alt="" className="absolute top-[10%] right-[2%] spin " />
-            <img src="/src/assets/Images/vectors/Vector-1.png" alt="" className="absolute top-[40%] left-[2%] spin" />
+            <img src="/images/vectors/Vector-1.png" alt="" className="absolute top-[40%] left-[2%] spin" />
           </div>
         </div>
       </section>

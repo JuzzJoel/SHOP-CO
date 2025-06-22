@@ -13,7 +13,7 @@ function MobileNav({ isMobileMenuOpen, toggleMobileMenu, isShopMenuOpen, toggleS
             <div className="relative flex items-center justify-center w-full h-10 my-5 align-center">
               <Link to="/" className="w-full flex items-center justify-center h-full ">
                     <img
-                src="/src/assets/Images/Icons/SHOP.CO.png"
+                src="/images/Icons/SHOP.CO.png"
                 alt=""
                 className="object-contain w-1/3 h-full"
               />
@@ -35,7 +35,7 @@ function MobileNav({ isMobileMenuOpen, toggleMobileMenu, isShopMenuOpen, toggleS
                 >
                   Shop
                   <img
-                    src="/src/assets/Images/Icons/arrow-down.png"
+                    src="/images/Icons/arrow-down.png"
                     alt=""
                     onClick={toggleShopMenu}
                     className={`object-contain h-[10px] cursor-pointer w-[15px] ${

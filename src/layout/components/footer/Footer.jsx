@@ -16,7 +16,7 @@ function Footer() {
               <div className="flex flex-col justify-around item-start h-[180px]  w-full md:w-1/4   md:h-[180px] md:translate-y-[50px]">
                 <Link to="/" className="w-full h-1/4 flex-col items-center justify-center text-center">
                    <img
-                  src="/src/assets/Images/Icons/SHOP.CO.png"
+                  src="/images/Icons/SHOP.CO.png"
                   alt=""
                   className="h-[20px] w-[145px] object-contain ml-[-10px]"
                 />
@@ -28,22 +28,22 @@ function Footer() {
                 </p>
                 <div className="flex w-full gap-3">
                   <img
-                    src="/src/assets/Images/Icons/twitter.png"
+                    src="/images/Icons/twitter.png"
                     alt=""
                     className="hover:invert"
                   />
                   <img
-                    src="/src/assets/Images/Icons/facebook.png"
+                    src="/images/Icons/facebook.png"
                     alt=""
                     className="invert hover:invert-0"
                   />
                   <img
-                    src="/src/assets/Images/Icons/insta.png"
+                    src="/images/Icons/insta.png"
                     alt=""
                     className=" hover:invert"
                   />
                   <img
-                    src="/src/assets/Images/Icons/github.png"
+                    src="/images/Icons/github.png"
                     alt=""
                     className="hover:invert"
                   />
@@ -152,27 +152,27 @@ function Footer() {
             </p>
             <div className="flex items-center justify-center">
               <img
-                src="/src/assets/Images/Icons/visa.png"
+                src="/images/Icons/visa.png"
                 alt=""
                 className="w-1/6"
               />
               <img
-                src="/src/assets/Images/Icons/mastercard.png"
+                src="/images/Icons/mastercard.png"
                 alt=""
                 className="w-1/6"
               />
               <img
-                src="/src/assets/Images/Icons/paypal.png"
+                src="/images/Icons/paypal.png"
                 alt=""
                 className="w-1/6"
               />
               <img
-                src="/src/assets/Images/Icons/apple-pay.png"
+                src="/images/Icons/apple-pay.png"
                 alt=""
                 className="w-1/6"
               />
               <img
-                src="/src/assets/Images/Icons/google-pay.png"
+                src="/images/Icons/google-pay.png"
                 alt=""
                 className="w-1/6"
               />
