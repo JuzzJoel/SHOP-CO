@@ -16,7 +16,7 @@ function MobileHeader() {
 
 
   return (
-    <header className=" h-[65px] w-[91%]  flex items-center justify-center border-b-1 border-black/10
+    <header className=" h-[65px] w-[91%]  flex items-center md:hidden justify-center border-b-1 border-black/10
       ">
       {/* Mobile layout */}
       <div className="relative h-[24px] flex items-center justify-center w-full md:hidden">

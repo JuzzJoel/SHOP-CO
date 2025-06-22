@@ -10,7 +10,7 @@ function DesktopHero() {
     <>
       <section className="flex mt-[-16px] hidden md:flex flex-col items-center justify-center w-screen h-[660px] bg-center bg-no-repeat bg-cover bg-gray-hero
 Zorb Flux Drek Rize Kaid Brio Lime Taze Nerd Fizz
-" style={{ backgroundImage: "url(../src/assets/images/hero/Rectangle-2-1.jpg)" }}>
+" style={{ backgroundImage: "url(/images/hero/Rectangle-2-1.jpg)" }}>
         <div className="w-9/10 max-w-[77.5rem] h-[100vh] flex flex-col items-center justify-center md:flex-row xl:h-[650px] ">
           <div className="flex flex-col items-center justify-between px-[5%] w-full h-1/2 md:px-[0] md:py-[5%] md:w-1/2 md:h-full md:items-start ">
             <h1 className="w-full font-black font-primary lg:text-[64px] lg:leading-[64px]"> FIND CLOTHES THAT MATCHES YOUR STYLE </h1>
@@ -38,7 +38,7 @@ Zorb Flux Drek Rize Kaid Brio Lime Taze Nerd Fizz
             </div>
           </div>
           <div className="relative w-full  h-1/2 md:w-1/2 md:h-full ">
-            <img src="/src/assets/Images/vectors/Vector.png" alt="" className="absolute top-[10%] right-[2%] spin " />
+            <img src="/images/vectors/Vector.png" alt="" className="absolute top-[10%] right-[2%] spin " />
             <img src="/src/assets/Images/vectors/Vector-1.png" alt="" className="absolute top-[40%] left-[2%] spin" />
           </div>
         </div>
