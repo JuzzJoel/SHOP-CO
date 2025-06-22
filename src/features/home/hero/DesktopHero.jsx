@@ -8,7 +8,7 @@ function DesktopHero() {
 
   return (
     <>
-      <section className="flex mt-[-16px]  md:hidden flex-col items-center justify-center w-screen h-[660px] bg-center bg-no-repeat bg-cover bg-gray-hero
+      <section className="flex mt-[-16px]  flex-col items-center justify-center w-screen h-[660px] bg-center bg-no-repeat bg-cover bg-gray-hero
 Zorb Flux Drek Rize Kaid Brio Lime Taze Nerd Fizz
 " style={{ backgroundImage: "url(/images/hero/Rectangle-2-1.jpg)" }}>
         <div className="w-9/10 max-w-[77.5rem] h-[100vh] flex flex-col items-center justify-center md:flex-row xl:h-[650px] ">
