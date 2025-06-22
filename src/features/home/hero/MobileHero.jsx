@@ -61,17 +61,17 @@ function MobileHero() {
         </div>
         <div className="relative w-full h-1/2">
           <img
-            src="/src/assets/Images/hero/Rectangle 2.jpg"
+            src="/images/hero/Rectangle 2.jpg"
             alt=""
             className="relative object-fill w-full h-full "
           />
           <img
-            src="/src/assets/Images/vectors/Vector.png"
+            src="/images/vectors/Vector.png"
             alt=""
             className="spin absolute top-[10%] right-[2%] spin "
           />
           <img
-            src="/src/assets/Images/vectors/Vector-1.png"
+            src="/images/vectors/Vector-1.png"
             alt=""
             className="spin absolute top-[40%] left-[2%] spin"
           />

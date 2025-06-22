@@ -15,8 +15,8 @@ function DesktopHeader() {
         <div className="flex items-center w-full  h-[50px] justify-between ">
           <Link to="/">
                <img
-            src="/images/icons/SHOP.CO.png"
-            alt="Logo"
+                src="/images/Icons/SHOP.CO.png"
+                alt="Logo"
             className="object-contain h-[22px] cursor-pointer w-[160px] mr-1"
           />
           </Link>

@@ -6,7 +6,7 @@ function Hero() {
       <div className="flex items-center justify-center w-full h-full">
         <MobileHero />
       </div>{" "}
-      <div className="flex items-center justify-center w-full h-full">
+      <div className=" hidden md:flex md:items-center md:justify-center md:w-full md:h-full">
         <DesktopHero />
       </div>
     </>
