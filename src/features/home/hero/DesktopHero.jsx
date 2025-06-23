@@ -19,25 +19,25 @@ Zorb Flux Drek Rize Kaid Brio Lime Taze Nerd Fizz
             <div className="flex flex-wrap items-center justify-between md:w-full md:divide-x md:divide-black/10 ">
               <div className="flex flex-col items-center justify-center w-1/2 border-r md:w-1/3 md:items-start">
                 <div className="flex flex-col items-center justify-center w-8/10 h-1/2">
-                  <div className="w-full text-xl font-bold font-secondary"> 200+ </div>
-                  <div className="font-secondary text-xs leading-[20px] w-full"> International Brands </div>
+                  <div className="w-full sm:text-[26px]  md:text-[30px] lg:text-[40px] font-bold font-secondary whitespace-nowrap"> 200+ </div>
+                  <div className="font-secondary whitespace-nowrap text-xs leading-[20px] w-full"> International Brands </div>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center w-1/2 md:w-1/3">
                 <div className="flex flex-col items-center justify-center w-8/10 h-1/2">
-                  <div className="w-full text-xl font-bold font-secondary"> 2,000+ </div>
-                  <div className="font-secondary text-xs leading-[20px] w-full "> High-Quality Products </div>
+                  <div className="w-full sm:text-[26px]  md:text-[30px] lg:text-[40px] font-bold font-secondary whitespace-nowrap"> 2,000+ </div>
+                  <div className="font-secondary whitespace-nowrap text-xs leading-[20px] w-full "> High-Quality Products </div>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center w-full translate-x-[10%] md:w-1/3">
                 <div className="flex flex-col items-center justify-center w-8/10 h-1/2">
-                  <div className="w-full text-xl font-bold font-secondary"> 30,000+ </div>
-                  <div className="font-secondary text-xs leading-[20px] w-full"> Happy Customers </div>
+                  <div className="w-full sm:text-[26px]  md:text-[30px] lg:text-[40px] font-bold font-secondary whitespace-nowrap"> 30,000+ </div>
+                  <div className="font-secondary whitespace-nowrap text-xs leading-[20px] w-full"> Happy Customers </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="relative w-full  h-1/2 md:w-1/2 md:h-full ">
+          <div className="relative w-full h-1/2 md:w-1/2 md:h-full ">
             <img src="/images/vectors/Vector.png" alt="" className="absolute top-[10%] right-[2%] spin " />
             <img src="/images/vectors/Vector-1.png" alt="" className="absolute top-[40%] left-[2%] spin" />
           </div>

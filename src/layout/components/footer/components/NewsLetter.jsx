@@ -21,7 +21,7 @@ function NewsLetter() {
                   className="relative w-full px-4 py-3 text-base bg-white border-none rounded-full cursor-pointer font-secondary text-black/40 h1/2 focus:border-none focus:outline-none"
                 />
                 <img
-                  src="/src/assets/Images/Icons/mail.png"
+                  src="/images/Icons/mail.png"
                   className="absolute left-[5%] top-[50%] translate-y-[-50%]"
                 />
               </div>

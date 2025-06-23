@@ -14,7 +14,7 @@ export const routes = [
     element: <Home />,
   },
   {
-    path: '/Shop',
+    path: '/shop',
     element: <Product />,
   },
   {

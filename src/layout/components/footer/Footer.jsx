@@ -14,7 +14,7 @@ function Footer() {
           <div className="flex items-end w-full justify-end h-[670px] border-b  border-black/20  md:h-[500px]  ">
             <div className="flex flex-col justify-between items-center h-[500px] w-full md:h-[400px] md:flex-row ">
               <div className="flex flex-col justify-around item-start h-[180px]  w-full md:w-1/4   md:h-[180px] md:translate-y-[50px]">
-                <Link to="/" className="w-full h-1/4 flex-col items-center justify-center text-center">
+                <Link to="/" className="flex-col items-center justify-center w-full text-center h-1/4">
                    <img
                   src="/images/Icons/SHOP.CO.png"
                   alt=""
@@ -112,7 +112,7 @@ function Footer() {
                   </ul>
                 </div>
                 <div className="flex flex-col items-start justify-between w-1/2 text-sm text-black h-4/10 font-secondary/60md:items-end md:h-[180px]">
-                  <ul className="flex flex-col md:items-center justify-between h-full ">
+                  <ul className="flex flex-col justify-between h-full md:items-center ">
                     <li className="text-sm text-black/60 leading-[18px] font-secondary font-semibold uppercase tracking-[3px] ">
                       {" "}
                       RESOURCES
@@ -141,7 +141,8 @@ function Footer() {
           {/* footer bottom */}
           <div className="flex flex-col items-center w-full justify-center gap-3 h-[135px]  text-sm text-black/60 w-font-secondary md:flex-row md:justify-between">
             <p>
-              Shop.co © 2025 , Coded by
+           Designed by <a className="font-bold hover:underline" href="https://www.figma.com/@hamzauix">
+Hamza Naeem</a>  , Coded by
               <a
                 href="https://startbootstrap-personal.vercel.app/"
                 className="font-bold hover:underline hover:text-black/80 in-hover:translate-x-[10px] ml-1"

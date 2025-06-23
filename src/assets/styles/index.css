@@ -28,7 +28,9 @@
   --color-gray-light: #d9d9d9;
   --color-gray-medium: #f0f0f0;
   --color-gray-dark: #888888; 
-   --color-gray-hero: #F2F0F1;
+   --color-gray-hero: #F2F0F1;  
+    --color-product-card: #F0EEED;
+
 
   --color-accent: #ff3333;
   --color-star: #ffc633;
@@ -129,7 +131,7 @@
   font-weight: 500;
   font-style: italic;
 }
-@font-face {
+/* @font-face {
   font-family: "Satoshi";
   src: url("../src/assets/Fonts/Satoshi/Fonts/WEB/fonts/Satoshi-SemiBold.woff2")
     format("woff2");
@@ -142,7 +144,7 @@
     format("woff2");
   font-weight: 600;
   font-style: italic;
-}
+} */
 @font-face {
   font-family: "Satoshi";
   src: url("../src/assets/Fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Bold.woff2")
@@ -157,7 +159,7 @@
   font-weight: 700;
   font-style: italic;
 }
-@font-face {
+/* @font-face {
   font-family: "Satoshi";
   src: url("../src/assets/Fonts/Satoshi/Fonts/WEB/fonts/Satoshi-ExtraBold.woff2")
     format("woff2");
@@ -170,7 +172,7 @@
     format("woff2");
   font-weight: 800;
   font-style: italic;
-}
+} */
 @font-face {
   font-family: "Satoshi";
   src: url("../src/assets/Fonts/Satoshi/Fonts/WEB/fonts/Satoshi-Black.woff2")

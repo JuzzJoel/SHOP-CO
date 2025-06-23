@@ -1,4 +1,4 @@
-import '@/assets/styles/index.css';
+import '/src/assets/styles/index.css';
 import { Route, Routes } from 'react-router-dom';
 import { useAnchorLinks } from '../hooks/useAnchorLinks';
 import { routes } from './routes';

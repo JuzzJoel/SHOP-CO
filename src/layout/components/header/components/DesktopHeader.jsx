@@ -24,7 +24,7 @@ function DesktopHeader() {
           <nav className="flex items-center justify-between h-full w-13/40">
             <ul className="flex items-center justify-between w-full h-full font-secondary">
               <li className="relative flex items-center justify-around w-1/4 text-gray-600 w hover:text-gray-900">
-                <Link to="/product"     className="relative flex items-center justify-between  gap-5 text-black hover:text-gray-900 active:decoration-2-underline text-[13px] lg:text-[16px]">   
+                <Link to="/shop"     className="relative flex items-center justify-between  gap-5 text-black hover:text-gray-900 active:decoration-2-underline text-[13px] lg:text-[16px]">   
                  <span className="flex items-center gap-1">Shop
                   <img
                     src="/images/Icons/arrow-down.png"

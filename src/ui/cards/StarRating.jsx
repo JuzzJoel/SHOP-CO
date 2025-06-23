@@ -1,24 +1,43 @@
+import { Star, StarHalf } from 'lucide-react';
 
-jsx
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+function renderStars(rating) {
+  const stars = [];
+  const fullStars = Math.floor(rating);
+  const hasHalfStar = rating % 1 >= 0.5;
 
-function RatingStars({ rating }) {
-  if (rating > 5) {
-    return <div>Rating must be 5 or above</div>;
+  for (let i = 1; i <= 5; i++) {
+    if (i <= fullStars) {
+      stars.push(
+        <span key={i} className="text-yellow-400">
+          <Star size={16} />
+        </span>
+      );
+    } else if (i === fullStars + 1 && hasHalfStar) {
+      stars.push(
+        <span key={i} className="text-yellow-400">
+          <StarHalf size={16} />
+        </span>
+      );
+    } else {
+      stars.push(
+        <span key={i} className="text-gray-300">
+          <Star size={16} />
+        </span>
+      );
+    }
   }
 
-  const stars = Array(Math.floor(rating)).fill(null).map((_, index) => (
-    <FontAwesomeIcon key={index} icon={faStar} color="gold" />
-  ));
+  return stars;
+}
 
+function StarRating({ rating }) {
   return (
-    <div>
-      {stars}
-      <span style={{ marginLeft: '10px' }}>{rating}</span>
+    <div className="flex items-center">
+      {renderStars(rating)}
+      <span className="ml-1 text-sm text-gray-500">
+        {/* {rating.toFixed(1)}/5 */}
+      </span>
     </div>
   );
 }
-
-export default RatingStars;
+export default StarRating;
