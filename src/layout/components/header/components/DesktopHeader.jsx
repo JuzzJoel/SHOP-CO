@@ -3,13 +3,6 @@ import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar/SearchBar";
 
 function DesktopHeader() {
-  const [isShopMenuOpen, setIsShopMenuOpen] = useState(false);
-  // const [searchItem, setSearchItem] = useState("");
-
-  const toggleShopMenu = () => {
-    setIsShopMenuOpen(!isShopMenuOpen);
-  };
-
   return (
     <header className="flex-row justify-center h-[96px] left-0 flex items-center w-scree h-top-50">
       <div className=" h-full border-b flex justify-center items-center max-w-[77.5rem] w-9/10 border-black/10">
@@ -24,50 +17,32 @@ function DesktopHeader() {
        
           <nav className="flex items-center justify-between h-full w-13/40">
             <ul className="flex items-center justify-between w-full h-full font-secondary">
-              <li className="relative flex items-center justify-around w-1/4 text-gray-600 w hover:text-gray-900">
-                <Link to="/shop"     className="relative flex items-center justify-between  gap-5 text-black hover:text-gray-900 active:decoration-2-underline text-[13px] lg:text-[16px]">   
-                 <span className="flex items-center gap-1">Shop
-                  <img
-                    src="/images/Icons/arrow-down.png"
-                    alt=""
-                    onClick={toggleShopMenu}
-                    className={`object-contain h-[10px] cursor-pointer w-[10px] ${
-                      isShopMenuOpen ? "rotate-180" : ""
-                    } transition-transform duration-500`}
-                  /></span> 
-                  </Link>
-              
-                <div className="absolute flex items-center justify-center w-full h-20 top-10 ">
-                  <ul
-                    className={`overflow-hidden transition-all flex flex-col justify-start  h-full w-full duration-500 ${
-                      isShopMenuOpen ? "max-h-40" : "max-h-0"
-                    }`}
-                  >
-                    <li>
-                      <Link to="#"
-                        className="block text-black hover:text-gray-900"
-                      >
-                        Men
-                      </Link >
-                    </li>
-                    <li>
-                      <Link to="#"
-                        className="block text-black hover:text-gray-900"
-                      >
-                        Women
-                      </Link >
-                    </li>
-                    <li>
-                        <Link to="#"
-                        className="block text-black hover:text-gray-900"
-                      >
-                        Children
-                      </Link >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
+
+<li className="relative group">
+  <Link to="/shop" className="flex items-center gap-1 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+    Shop
+    <img src="/images/Icons/arrow-down.png" alt="" className="object-contain h-[10px] cursor-pointer w-[10px] group-hover:rotate-180 transition-transform duration-500" />
+  </Link>
+  <ul className="absolute hidden group-hover:block bg-white shadow-md w-40 top-10">
+    <li>
+      <Link to="#" className="block px-4 py-2 text-black hover:text-gray-900 hover:bg-gray-100">
+        Men
+      </Link>
+    </li>
+    <li>
+      <Link to="#" className="block px-4 py-2 text-black hover:text-gray-900 hover:bg-gray-100">
+        Women
+      </Link>
+    </li>
+    <li>
+      <Link to="#" className="block px-4 py-2 text-black hover:text-gray-900 hover:bg-gray-100">
+        Children
+      </Link>
+    </li>
+  </ul>
+</li>
+
+<li>
                 <Link to="#" className="w-1/4  text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
                   On Sale
                 </Link >

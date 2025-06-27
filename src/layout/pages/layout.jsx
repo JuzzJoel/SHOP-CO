@@ -2,6 +2,7 @@ import Alert from '../components/alert/Alert';
 import Breadcrumbs from '../components/breadcrumbs/BreadCrumbs';
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/pages/Header';
+import { CartProvider } from '../../context/cartContext';
 import { gsap } from "gsap";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useEffect } from 'react';
@@ -31,11 +32,15 @@ function Layout({ children }) {
   return (
      <div id="wrapper">
       <div id="content">
+           <CartProvider>
+
         <Alert/>
       < Header />
       <Breadcrumbs />
       <main>{children}</main>
-        <Footer />
+          <Footer />
+           </CartProvider>
+
       </div>
 
     </div>

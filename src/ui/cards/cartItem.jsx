@@ -1,30 +1,19 @@
 import { Minus, Plus, Trash2 } from "lucide-react";
+import { useContext } from 'react';
+import { CartContext } from '../../context/cartContext';
 import CurrencyFormatter from "/src/lib/utils/CurrencyFormatter"
 
-function CartItem({ item, updateCartItemQuantity, removeCartItem }) {
-  const handleQuantityChange = (item, action) => {
-    if (updateCartItemQuantity) {
-      if (action === "increment") {
-        updateCartItemQuantity(item.id, item.quantity + 1);
-      } else if (action === "decrement" && item.quantity > 1) {
-        updateCartItemQuantity(item.id, item.quantity - 1);
-      }
-    }
-  };
 
-  const handleRemoveItem = (item) => {
-    if (removeCartItem) {
-      removeCartItem(item.id);
-    }
-  };
+function CartItem({ item }) {
+  const { updateCartItemQuantity, removeCartItem } = useContext(CartContext);
 
   return (
     <div className="flex w-full h-25 sm:h-27 md:h-29 lg:h-31 items-center gap-[14px] justify-between rounded-2xl">
       <div className="flex items-center h-full gap-4">
-        <img 
-          src={item?.imageUrl} 
-          alt={item?.title} 
-          className="w-[32/100] h-full aspect-square bg-gray-200 bg-blend-multiply rounded-[9px] object-cover" 
+        <img
+          src={item?.imageUrl}
+          alt={item?.title}
+          className="w-[32/100] h-full aspect-square bg-gray-200 bg-blend-multiply rounded-[9px] object-cover"
         />
       </div>
       <div className="flex justify-between h-full w-7/10">
@@ -44,31 +33,37 @@ function CartItem({ item, updateCartItemQuantity, removeCartItem }) {
         </div>
 
         <div className="flex flex-col items-end justify-between gap-4">
-          <button 
-            className="text-red-500 hover:text-red-700" 
-            onClick={() => handleRemoveItem(item)}
+          <button
+            className="text-red-500 hover:text-red-700"
+            onClick={() => removeCartItem(item.id)}
           >
             <Trash2 size={20} />
           </button>
-          
-          <div className="flex items-center bg-gray-medium rounded-full px-[6px] py-1 w-26 h-8 gap-4">
-            <button
-              className="text-2xl font-black text-black cursor-pointer hover:font-black"
-              onClick={() => handleQuantityChange(item, "decrement")}
-            >
-              <Minus size={18} />
-            </button>
-            <span className="mx-2 font-medium font-secondary text-[14px]">{item?.quantity}</span>
-            <button
-              className="text-2xl text-black cursor-pointer hover:font-black"
-              onClick={() => handleQuantityChange(item, "increment")}
-            >
-              <Plus size={18} />
-            </button>
-          </div>
-        </div>
+
+                <div className="flex items-center bg-gray-medium rounded-full px-[6px] py-1 w-26 h-8 gap-4">
+        <button
+          className="text-2xl font-black text-black cursor-pointer hover:font-black"
+          onClick={() => updateCartItemQuantity(item.id, item.quantity - 1)}
+          disabled={item.quantity === 1}
+        >
+          <Minus size={18} />
+        </button>
+        <span className="mx-2 font-medium font-secondary text-[14px]">
+          {item.quantity}
+        </span>
+        <button
+          className="text-2xl text-black cursor-pointer hover:font-black"
+          onClick={() => updateCartItemQuantity(item.id, item.quantity + 1)}
+        >
+          <Plus size={18} />
+        </button>
+      </div>
+
+                  </div>
+
       </div>
     </div>
+
   );
 }
 

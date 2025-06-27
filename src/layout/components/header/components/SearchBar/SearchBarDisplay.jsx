@@ -1,13 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-function SearchBarDisplay() {
+export default function SearchBarDisplay({ searchItem, recentSearches, searchResults }) {
   return (
-    <>
-          <section className=" absolute top-10 left-0  w-screen md:w-200 bg-blue-200 rounded-[20px] h-[500px]  z-999999">
-          <div className="w-full h-full bg-red-100 rounded-[20px] max-w-[77.5rem]"></div>
-          </section>
-    </>
-  )
+    <section className="mt-4 w-full bg-white rounded-[20px] shadow-md p-4">
+      <h2 className="text-lg font-bold mb-2">Recent Searches</h2>
+      <ul>
+        {recentSearches.map((search, index) => (
+          <li key={index} className="py-2 border-b border-gray-200">
+            <button className="text-sm text-gray-600" onClick={() => searchItem(search)}>
+              {search}
+            </button>
+          </li>
+        ))}
+      </ul>
+      {searchResults && (
+        <p className="text-sm text-gray-600 mt-2">
+          {searchResults.length} results found
+        </p>
+      )}
+    </section>
+  );
 }
-
-export default SearchBarDisplay
