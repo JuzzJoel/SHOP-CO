@@ -3,11 +3,11 @@ import ProductCard from '/src/ui/cards/ProductCard';
 import ProductList from '/src/ui/layout/ProductList';
 
 
-function PhotoGallery({ idGallery, titleGallery, data, buttonText, filterProp, filterValue, sortProp, sortOrder, limit , random , viewAll }) {
+function PhotoGallery({ idGallery, titleGallery, data, buttonText, filterProp, filterValue, sortProp, sortOrder, limit , random , viewAll ,border}) {
   return (
     <>
-      <section id={idGallery} className="flex items-center justify-center w-screen h-auto border-b mt-13 lg:mt-18">
-        <div className="w-9/10 max-w-[77.5rem] h-full bg-white flex items-center justify-around flex-col">
+      <section id={idGallery} className="flex items-center justify-center w-screen h-auto mt-13 lg:mt-18">
+        <div className={`w-9/10  max-w-[77.5rem] h-full bg-white flex items-center justify-around flex-col ${border}`}>
           <h1 className="text-[32px] uppercase font-black font-primary lg:text-5xl mb-8 md:mb-12">
             {titleGallery}
           </h1>

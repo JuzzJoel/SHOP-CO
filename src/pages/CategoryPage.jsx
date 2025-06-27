@@ -6,10 +6,8 @@ import CategoryPageComponent from "@/features/category/pages/CategoryPage.jsx";
 function CategoryPage() {
   return (
     <>
-      <Layout>
+<CategoryPageComponent/>
 
-
-      </Layout>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import { Minus, Plus, Trash2 } from "lucide-react";
-import FormatPrice from "/src/lib/utils/CurrencyFormatter";
+import CurrencyFormatter from "/src/lib/utils/CurrencyFormatter"
 
 function CartItem({ item, updateCartItemQuantity, removeCartItem }) {
   const handleQuantityChange = (item, action) => {
@@ -38,7 +38,7 @@ function CartItem({ item, updateCartItemQuantity, removeCartItem }) {
               Color:<span className="font-light">{item?.color}</span>
             </p>
             <p className="text-[20px]md:text-[22px] lg:text-[24px] mt-3">
-              <FormatPrice price={item?.price.new} />
+              <CurrencyFormatter value={item?.price.new} />
             </p>
           </div>
         </div>

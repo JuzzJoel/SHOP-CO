@@ -22,7 +22,7 @@ export const routes = [
     element: <Shop />,
   },
   {
-    path: '/category:id',
+    path: '/c',
     element: <Category />,
   }, {
     path: '/login',

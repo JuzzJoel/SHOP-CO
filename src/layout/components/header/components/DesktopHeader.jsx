@@ -1,17 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SearchBar from "./SearchBar/SearchBar";
 
 function DesktopHeader() {
   const [isShopMenuOpen, setIsShopMenuOpen] = useState(false);
-  const [searchItem, setSearchItem] = useState("");
+  // const [searchItem, setSearchItem] = useState("");
 
   const toggleShopMenu = () => {
     setIsShopMenuOpen(!isShopMenuOpen);
   };
 
   return (
-    <header className="flex-row justify-center h-[96px] left-0 flex items-center w-screen bg-white  h-top-50">
-      <div className=" h-full border-b flex items-center max-w-[77.5rem] w-9/10 border-black/10">
+    <header className="flex-row justify-center h-[96px] left-0 flex items-center w-scree h-top-50">
+      <div className=" h-full border-b flex justify-center items-center max-w-[77.5rem] w-9/10 border-black/10">
         <div className="flex items-center w-full  h-[50px] justify-between ">
           <Link to="/">
                <img
@@ -43,76 +44,68 @@ function DesktopHeader() {
                     }`}
                   >
                     <li>
-                      <a
-                        href="#"
+                      <Link to="#"
                         className="block text-black hover:text-gray-900"
                       >
                         Men
-                      </a>
+                      </Link >
                     </li>
                     <li>
-                      <a
-                        href="#"
+                      <Link to="#"
                         className="block text-black hover:text-gray-900"
                       >
                         Women
-                      </a>
+                      </Link >
                     </li>
                     <li>
-                      <a
-                        href="#"
+                        <Link to="#"
                         className="block text-black hover:text-gray-900"
                       >
                         Children
-                      </a>
+                      </Link >
                     </li>
                   </ul>
                 </div>
               </li>
               <li>
-                <a href="#" className="w-1/4  text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+                <Link to="#" className="w-1/4  text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
                   On Sale
-                </a>
+                </Link >
               </li>
               <li>
-                <a href="#" className="w-1/4 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+                <Link to="/#new-arrivals" className="w-1/4 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
                   New Arrivals
-                </a>
+                </Link >
               </li>
               <li>
-                <a href="#" className="w-1/4 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+                <Link to="#" className="w-1/4 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
                   Brands
-                </a>
+                </Link >
               </li>
             </ul>
           </nav>
-          <div className="flex  items-center justify-between w-55/100 ">
-            <div className="relative flex  items-center justify-center h-full ml-1 rounded-full w-17/20 ">
-              <input
-                type="text"
-                className="w-full h-full px-2 py-4 text-black border-none rounded-full indent-[50px] bg-black/10 focus:outline-none md:h-[8/10]"
-                placeholder="        Search for products..."
-                onChange={(e) => setSearchItem(e.target.value)} value={searchItem}
-              />
-              <img
-                src="/images/icons/search-lg.png"
-                alt=""
-                className="absolute top-[50%] left-10 translate-y-[-50%]"
-              />
-            </div>
+
+
+
+
+          
+          <div className="flex items-center justify-between w-55/100 ">
+            
+          <SearchBar/>
+
             <div className="flex items-center justify-between xl:justify-around w-4/30">
               <Link to="/cart">
                 <img
                 src="/images/Icons/cart.png"
                 alt=""
-                className="object-contain h-7 w-7  md:w-5 md:h-7"
+                className="object-contain h-7 w-7 md:w-5 md:h-7"
               />
               </Link>
               
               <img
                 src="/images/Icons/user.png"
                 alt=""
-                className="object-contain h-7 w-7 cursor-pointer  md:w-5 md:h-7"
+                className="object-contain cursor-pointer h-7 w-7 md:w-5 md:h-7"
               />
             </div>
           </div>

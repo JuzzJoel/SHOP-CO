@@ -23,7 +23,7 @@ function NewArrivals() {
   return (
     <div>
              <PhotoGallery
-  idGallery="new-arrivals-gallery"
+  idGallery="new-arrivals"
   titleGallery="new arrivals"
   data={random_data}
   buttonText={buttonText}
@@ -33,7 +33,8 @@ function NewArrivals() {
         limit={limit}
         filterProp=""
         filterValue=""
-          viewAll={handleViewAll}
+        viewAll={handleViewAll}
+        border="border-b border-black/10"
 
 />     
     </div>

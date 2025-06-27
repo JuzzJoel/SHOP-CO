@@ -6,6 +6,7 @@ import PhotoGallery from '../../../ui/layout/PhotoGallery'
 import random_data from '/src/data/randomized_products.json'
 import NewArrivals from '../components/NewArrivals';
 import TopSelling from '../components/TopSelling';
+import DressByStyle from '../components/BrowseByStyle';
 
 
 function HomePage() {
@@ -17,7 +18,7 @@ function HomePage() {
         <Brand />
         <NewArrivals/>
         <TopSelling/>
-
+<DressByStyle/>
      
       </Layout>
     </>

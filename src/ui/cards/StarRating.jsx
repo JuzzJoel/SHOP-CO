@@ -9,20 +9,17 @@ function renderStars(rating) {
     if (i <= fullStars) {
       stars.push(
         <span key={i} className="text-yellow-400">
-          <Star size={16} />
+<Star size={16} fill="currentColor" />
         </span>
       );
     } else if (i === fullStars + 1 && hasHalfStar) {
       stars.push(
-        <span key={i} className="text-yellow-400">
-          <StarHalf size={16} />
+     <span key={i} className="relative text-yellow-400">
+          <Star size={16} className="absolute" fill="currentColor" style={{ clipPath: 'inset(0 50% 0 0)' }} />
+          <Star size={16} className="text-transparent" />
         </span>
-      );
-    } else {
-      stars.push(
-        <span key={i} className="text-gray-300">
-          <Star size={16} />
-        </span>
+
+
       );
     }
   }
@@ -34,8 +31,8 @@ function StarRating({ rating }) {
   return (
     <div className="flex items-center">
       {renderStars(rating)}
-      <span className="ml-1 text-sm text-gray-500">
-        {/* {rating.toFixed(1)}/5 */}
+      <span className="ml-1 text-xs font-normal md:text-sm font-secondary">
+        {rating.toFixed(1)}<span className='font-light'>/5</span>
       </span>
     </div>
   );
