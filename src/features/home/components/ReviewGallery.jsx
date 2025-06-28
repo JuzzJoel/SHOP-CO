@@ -17,12 +17,18 @@ function ReviewGallery() {
    
               </div>
               </div>
-              <div className="h-auto flex w-screen">
+              <div className="h-auto flex w-screen filter blur-100 gap-5">
               {reviews
             .filter((review) => review.rating > 4.5)
-            .map((review, index) => (
-              <ReviewCard key={index} review={review} />
-            ))}
+            .map((review) => (
+                <ReviewCard
+                key={review.id}
+                id={review.id}
+                ratings={review.rating}
+                name={review.name}
+                comment={review.comment}
+              />
+                    ))}
 
               </div>
               
