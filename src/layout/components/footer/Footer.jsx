@@ -4,7 +4,7 @@ import NewsLetter from "./components/NewsLetter";
 function Footer() {
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center w-screen mt-45 bg-gray-light min-h-auto sm:border-t-2 sm:border-black/100 ">
+      <section className="relative flex flex-col items-center justify-center w-screen mt-45 min-h-auto  ">
         <div className="flex flex-col items-center justify-center w-[90vw] h-auto max-w-[77.5rem]">
 
          <NewsLetter/>

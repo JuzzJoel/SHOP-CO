@@ -8,7 +8,7 @@ function CartItem({ item }) {
   const { updateCartItemQuantity, removeCartItem } = useContext(CartContext);
 
   return (
-    <div className="flex w-full h-25 sm:h-27 md:h-29 lg:h-31 items-center gap-[14px] justify-between rounded-2xl">
+    <div className="flex w-full h-25 sm:h-27 md:h-29 lg:h-31 items-center gap-[14px] justify-between rounded-2xl ">
       <div className="flex items-center h-full gap-4">
         <img
           src={item?.imageUrl}

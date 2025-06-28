@@ -4,7 +4,7 @@ import Prices from "./Prices";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className=" w-50 md:w-75 font-secondary">
+    <div className=" w-50 md:w-75 font-secondary hover:scale-[1.01] cursor-pointer">
         <img 
           src={product.imageUrl} 
           alt={product.name}

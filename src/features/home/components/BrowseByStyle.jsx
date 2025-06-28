@@ -33,7 +33,7 @@ export default function BrowseStyle() {
     <div className="hidden max-w-[1110px] grid-cols-10 gap-[20px] mt-15 mb-15 mx-auto md:grid">
   {categories.map((cat, index) => (
     <Link to={`c/#${cat.label.toLowerCase()}`} key={index} className={`block ${index === 0 || index === 3 ? 'col-span-3' : 'col-span-7'}`}>
-      <div className="relative overflow-hidden bg-white shadow-md rounded-xl h-[290px]">
+      <div className="relative overflow-hidden bg-white shadow-xs rounded-xl h-[290px]">
         <img src={cat.image} alt={cat.label} className="object-cover w-full h-full" />
         <div className="absolute left-0 p-4 text-[36px] font-bold text-black top-2">
           {cat.label}
