@@ -6,7 +6,7 @@ function ReviewGallery() {
 
   return (
       <>
-          <section className="h-[500px] w-screen bg-white flex flex-col gap-4 justify-center items-center">
+          <section className="h-auto w-screen bg-white flex flex-col gap-4 justify-center items-center">
               <div className="w-9/10 flex items-end justify-between bg-red-400 h-15 max-w-[77.5rem]">
                   <h1 className="text-[32px] leading-[36px] md:leading-0 flex items-center bg-green-600  h-full text-left md:text-[40px] uppercase font-primary font-black text-black ">
                   our happy customers
@@ -17,14 +17,14 @@ function ReviewGallery() {
    
               </div>
               </div>
-              <div className="h-auto flex w-screen filter blur-100 gap-5">
+              <div className="h-auto flex flex-wrap w-9/10 max-w-[77.5rem] filter blur-100 gap-5">
               {reviews
-            .filter((review) => review.rating > 4.5)
+            .filter((review) => review.rating = 5)
             .map((review) => (
                 <ReviewCard
                 key={review.id}
                 id={review.id}
-                ratings={review.rating}
+                rating={review.rating}
                 name={review.name}
                 comment={review.comment}
               />

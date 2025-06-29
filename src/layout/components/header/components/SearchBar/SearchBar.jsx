@@ -41,7 +41,7 @@ function SearchBar() {
       <input
         type="text"
         className="w-full h-full px-2 py-4 text-black border-none rounded-full indent-[50px] bg-black/10 focus:outline-none md:h-[8/10]"
-        placeholder="Search for products..."
+        placeholder="   Search for products..."
         onChange={handleSearch}
         value={searchItem}
         onFocus={handleFocus}

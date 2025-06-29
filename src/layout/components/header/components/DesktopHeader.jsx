@@ -1,12 +1,11 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import SearchBar from "./SearchBar/SearchBar";
 
 function DesktopHeader() {
   return (
     <header className="flex-row justify-center h-[96px] left-0 flex items-center w-scree h-top-50">
-      <div className=" h-full border-b flex justify-center items-center max-w-[77.5rem] w-9/10 border-black/10">
-        <div className="flex items-center w-full  h-[50px] justify-between ">
+      <div className=" h-full border-b flex justify-center  items-center max-w-[77.5rem] w-9/10 border-black/10">
+        <div className="flex items-center w-full md:gap-[15px] lg:gap-[20px] xl:gap-[50px]  h-[50px] justify-between ">
           <Link to="/">
                <img
                 src="/images/Icons/SHOP.CO.png"
@@ -16,10 +15,10 @@ function DesktopHeader() {
           </Link>
        
           <nav className="flex items-center justify-between h-full w-13/40">
-            <ul className="flex items-center justify-between w-full h-full font-secondary">
+            <ul className="flex items-center gap-[15px] justify-between w-full h-full font-secondary">
 
 <li className="relative group">
-  <Link to="/shop" className="flex items-center gap-1 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+  <Link to="/shop" className="flex items-center gap-1 text-black hover:text-gray-900 text-[14px] lg:text-[16px] whitespace-nowrap ">
     Shop
     <img src="/images/Icons/arrow-down.png" alt="" className="object-contain h-[10px] cursor-pointer w-[10px] group-hover:rotate-180 transition-transform duration-500" />
   </Link>
@@ -43,17 +42,17 @@ function DesktopHeader() {
 </li>
 
 <li>
-                <Link to="#" className="w-1/4  text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+                <Link to="#" className="w-1/4  text-black hover:text-gray-900 text-[14px] lg:text-[16px] whitespace-nowrap">
                   On Sale
                 </Link >
               </li>
               <li>
-                <Link to="/#new-arrivals" className="w-1/4 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+                <Link to="/#new-arrivals" className="w-1/4 text-black hover:text-gray-900 text-[14px] lg:text-[16px] whitespace-nowrap">
                   New Arrivals
                 </Link >
               </li>
               <li>
-                <Link to="#" className="w-1/4 text-black hover:text-gray-900 text-[13px] lg:text-[16px]">
+                <Link to="#" className="w-1/4 text-black hover:text-gray-900 text-[14px] lg:text-[16px] whitespace-nowrap">
                   Brands
                 </Link >
               </li>
@@ -64,7 +63,7 @@ function DesktopHeader() {
 
 
           
-          <div className="flex items-center justify-between w-55/100 ">
+          <div className="flex items-center mx-[10px] justify-between w-55/100 ">
             
           <SearchBar/>
 
